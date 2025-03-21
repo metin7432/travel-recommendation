@@ -1,5 +1,119 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: ;
+    box-sizing: border-box;
 }
+
+nav {
+    background-color: #303636;
+    color: aliceblue;
+    height: 40px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .search-div {
+    position: relative;
+    right: -29rem;
+    top: -.5rem;
+  }
+
+  .search-input {
+    height: 30px;
+    width: 20rem;
+    border-radius: .8rem;
+    color: green;
+    padding: .5rem;
+    border: 1px solid rgb(62, 62, 156);
+   
+    
+  }
+
+  .search-input::placeholder {
+    color: green;
+   
+  }
+
+  .search-input:focus {
+    outline: none;
+  }
+  
+  button{
+    position: relative;
+    right: 8rem;
+    background-color: green;
+    color: white;
+    width: 2.7rem;
+    font-size: .7rem;
+    height: 1.2rem;
+    border-radius: 5px;
+    outline: none;
+    border: none
+  }
+
+  img {
+    position: relative;
+    left: 13rem;
+    top: 6px;
+    height: 17px;
+    width: 17px;
+  }
+
+  .logo {
+    position: relative;
+    top: 1px;
+    left: 1px;
+    height: 35px;
+    width: 35px;
+  }
+
+  @media  (max-width: 1400px) {
+    .search-div {
+        position: relative;
+        left: 19rem;
+        top: -.5rem;
+      }
+  }
+
+  @media  (max-width: 1100px) {
+    .search-div {
+        position: relative;
+        left: 15rem;
+        top: -.5rem;
+      }
+  }
+
+  @media  (max-width: 800px) {
+    .search-div {
+        position: relative;
+        left: 10rem;
+        top: -.5rem;
+      }
+  }
+
+  .navHead {
+    position: relative;
+    left: -10rem;
+    color: rgb(40, 158, 40);
+    font-weight: bold;
+    font-size: 1.8rem;
+    cursor: po;
+    letter-spacing: .1rem;
+  }
+  .navHead:hover{
+    color: rgb(58, 151, 58);
+  }
